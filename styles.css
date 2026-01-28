@@ -401,3 +401,21 @@ footer {
         font-size: 1.5rem;
     }
 }
+body {
+    background-color: #000000;
+    color: #FFD700; /* Gold color for text */
+    font-family: 'Arial', sans-serif;
+}
+
+header, footer {
+    background-color: #111;
+    border-bottom: 2px solid #FFD700;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+
+/* Additional styling can be added to fine-tune the design */
