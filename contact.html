@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - STE Elmajd Assistance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="Elmajd Assistance Logo" class="logo">
+                <h1>STE Elmajd Assistance</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="zones.html">Zones</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p>Disponibles 24h/24 - 7j/7 pour vous assister</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+21698473557">+216 98 473 557</a></p>
+                    <p class="small-text">Disponible 24h/24</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/21698473557" target="_blank">+216 98 473 557</a></p>
+                    <p class="small-text">Réponse rapide</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@elmajd-assistance.tn">contact@elmajd-assistance.tn</a></p>
+                    <p class="small-text">Réponse sous 24h</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Site Web</h3>
+                    <p>www.elmajd-assistance.tn</p>
+                    <p class="small-text">Information complète</p>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; margin: 3rem 0 2rem;">Formulaire de Contact</h2>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom complet <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Type de service <span class="required">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Sélectionnez un service --</option>
+                        <option value="transport-hospitalier">Transport Hospitalier</option>
+                        <option value="transport-aeroport">Transport Aéroportuaire</option>
+                        <option value="rapatriement">Rapatriement International</option>
+                        <option value="assistance-admin">Assistance Administrative</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Localisation</label>
+                    <input type="text" id="location" name="location" placeholder="Ville ou gouvernorat">
+                </div>
+
+                <div class="form-group">
+                    <label for="urgent">Urgence <span class="required">*</span></label>
+                    <select id="urgent" name="urgent" required>
+                        <option value="">-- Niveau d'urgence --</option>
+                        <option value="immediate">Immédiate (moins de 2h)</option>
+                        <option value="today">Aujourd'hui</option>
+                        <option value="demain">Demain</option>
+                        <option value="information">Demande d'information</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Décrivez brièvement votre demande..."></textarea>
+                    <p class="form-note">Toutes les informations sont traitées de manière strictement confidentielle</p>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+
+                <div class="privacy-note">
+                    <p>🔒 Vos données personnelles sont protégées et ne seront jamais partagées avec des tiers. Nous les utilisons uniquement pour traiter votre demande.</p>
+                </div>
+            </form>
+
+            <div class="urgent-contact">
+                <h3>⚠️ Cas Urgent ?</h3>
+                <p>Pour une intervention immédiate, appelez-nous directement :</p>
+                <a href="tel:+21698473557" class="btn btn-primary">📞 +216 98 473 557</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Logo" class="footer-logo">
+                    <h3>STE Elmajd Assistance</h3>
+                    <p>Pompes Funèbres - Medical & Funéraire</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📱 +216 98 473 557</p>
+                    <p>📧 contact@elmajd-assistance.tn</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 STE Elmajd Assistance - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
