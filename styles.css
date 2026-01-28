@@ -1,53 +1,77 @@
-.hero {
-    background-color: black;
-    /* Removed purple gradient background */
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181B22; /* Bleu Nuit */
+    color: #4D5055; /* Gris Argenté */
+}
+
+/* Navigation */
 nav {
-    background-color: #333;
-    color: #FFD700; /* Gold accents */
+    background-color: #82775B; /* Or Champagne */
+    padding: 20px;
 }
 
 nav a {
-    color: #FFD700; /* Gold accents */
+    color: #181B22; /* Bleu Nuit */
     text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path_to_image.jpg'); /* Add specific image path */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Availability Section */
+.availability {
+    background-color: #4D5055; /* Gris Argenté */
+    padding: 20px;
+    color: #FFFFFF; /* White text for readability */
+}
+
+/* Content Sections */
+.content-section {
+    padding: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #82775B; /* Or Champagne */
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #181B22; /* Bleu Nuit */
+    text-align: center;
     padding: 15px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.service-card {
-    background-color: #444;
-    color: white;
-    border: 1px solid #FFD700; /* Gold accents */
-    border-radius: 5px;
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; /* Stack services on mobile */
+    }
+    
     nav {
         flex-direction: column;
-    }
-    .services {
-        grid-template-columns: 1fr;
     }
 }
